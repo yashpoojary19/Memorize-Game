@@ -41,6 +41,13 @@ struct MemoryGame<CardContent> {
         print("\(cards)")
     }
     
+    mutating func shuffle() {
+        cards.shuffle()
+    }
+    
+    
+    
+    
     init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
         cards = []
         
@@ -49,6 +56,8 @@ struct MemoryGame<CardContent> {
             cards.append(Card(content: content, id: pairIndex*2))
             cards.append(Card(content: content, id: pairIndex*2+1))
         }
+        shuffle()
+        
     }
     
     struct Card: Identifiable {
