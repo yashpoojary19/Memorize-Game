@@ -1,10 +1,3 @@
-//
-//  Cardify.swift
-//  Memorize Game
-//
-//  Created by Yash Poojary on 16/08/21.
-//
-
 import SwiftUI
 
 
